@@ -9,7 +9,7 @@ import { User } from '../state/user.model';
   selector: 'app-users',
   templateUrl: './users-list.component.html',
 })
-export class UsersListComponent {
+export class UsersComponent {
 
   @Input()
   users!: User[];
