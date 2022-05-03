@@ -9,9 +9,7 @@ import { of } from 'rxjs';
 @Injectable({ providedIn: 'root' })
 export class UsersService {
 
-  constructor(private usersStore: UsersStore,
-              private http: HttpClient) {
-  }
+  constructor(private usersStore: UsersStore) {}
 
   get() {
     of(data).subscribe(entities => {

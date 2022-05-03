@@ -10,8 +10,8 @@ import { UsersQuery } from '../state/users.query';
   templateUrl: './users-page.component.html'
 })
 export class UsersPageComponent implements OnInit {
-  users$!: Observable<User[]> | null;
-  active$!: Observable<User[]> | Observable<User | undefined>;
+  users$?: Observable<any[]>;
+  active$?: Observable<any>;
 
   constructor(
     private usersService: UsersService,

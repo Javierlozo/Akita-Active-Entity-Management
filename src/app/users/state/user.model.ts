@@ -12,6 +12,6 @@ export interface User {
  */
 export function createUser(params: Partial<User>) {
   return {
-
+    ...params
   } as User;
 }
